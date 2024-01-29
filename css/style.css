@@ -1,0 +1,485 @@
+/*START general styling */
+h1,h2,h3,h4,h5,h6,.navbar-brand{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    color: #343434;
+    font-weight: 400;
+}
+.main-color{
+    color: #748182;
+}
+.second-color{
+    color: #999;
+}
+.logo-color{
+    color: #1C1C1C;
+}
+.size{
+    font-size: 18px;
+    font-weight: 800;
+}
+
+/* END OF GENERAL STYLING */
+/* START OF NAVBAR */
+.navbar-collapse {
+    text-align: center;
+    
+}
+
+.navbar-nav .nav-link {
+    font-size: 14px;
+    position: relative;
+    margin: 0 10px 0 0;
+    display: inline-block;
+}
+.navbar-nav .nav-link::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    background-color: black;
+    transition: all 0.5s;
+    
+}
+.navbar-nav .nav-link.active::before{
+    width: 80%;
+}
+
+ 
+/* START OF NAVBAR */
+/* START OF HOME SECTION */
+header{
+    background-image: url("../images/imgs/bg.jpg");
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.layer{
+    background-color: rgba(0,0,0, 0.65);
+}
+.icon{
+    width: 35px;
+    height: 35px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 50%;
+}
+.icon i{
+    font-size: 14px;
+}
+.home-cap h5{
+    font-size: 50px;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+.home-cap p{
+    font-weight: 200;
+    font-size: 4,4rem;
+}
+.home-cap h1{
+    font-weight: 300; 
+    
+}
+.home-cap span{
+    border-right: 2px solid #f4f4f4;
+    animation: typing 1s both infinite;
+    width: 220px;
+    font-weight: 500;
+    display:inline-block ;
+    position: relative;
+    top: 10px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.home-cap b{
+    display: none;
+}
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 220px;
+    }
+}
+/* END OF HOME SECTION */
+/* START OF ABOUT SECTION */
+.padding{
+    padding: 100px 0 70px 0;
+}
+.about-img::after{
+    content: "";
+    background-image: url("../images/imgs/dots.png");
+    background-repeat: repeat;
+    width: 80%;
+    height: 80%;
+    z-index: -1;
+    position: absolute;
+    left: -30px;
+    bottom:-30px;
+}
+.about-cap h3{
+   margin-bottom: 5px; 
+}
+.about-cap span.second-color{
+    margin-bottom: 20px;
+}
+.about-cap p{
+    line-height:1.6 ;
+    font-size: 15px;
+}
+.skills{
+    margin-top: 30px;
+}
+.skills .progress{
+    margin-bottom: 30px;
+    border-radius: 5px;
+    background-color:#f7f7f7 ;
+    box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.15) inset;
+    padding: 12px 10px;
+}
+.skills .progress-bar{
+    background-color: #1C1C1C ;
+    padding: 5px 10px;
+    border-radius: 4px;
+    top: 0;
+    left: 0;
+    bottom: 0;
+}
+.progress-bar h6{
+    font-size: 13px;
+    left: 10px;
+    font-weight: 600;
+    font-weight: 500;
+}
+.progress-bar span{
+    right: 10px;
+    font-size: 11px;
+}
+.btn-group{
+    margin-top: 20px;
+}
+.btn-group a{
+    padding: 10px 30px;
+    border: 1px solid #1C1C1C;
+    font-size: 13px;
+    border-radius: 4px;
+    transition: all 0.5s;
+}
+.hover{
+    color: #1C1C1C;
+}
+.custom{
+    color: #eee;
+    background-color:#1C1C1C ;
+}
+.btn-group a:hover.custom{
+background-color: white;
+color: #1C1C1C;
+}
+.btn-group a:hover.hover{
+    background-color: black;
+    color: #eee;
+}
+/* END OF ABOUT SECTION */
+/* START OF SERVICES SECTION */
+.bg-gray{
+    background-color: #f7f7f7;
+}
+.title h3{
+    font-weight: 900;
+    font-size: 40px;
+    position: relative;
+    z-index: 4;
+}
+.title h3::after{
+    content: "";
+    background-image: url("../images/imgs/dots.png");
+    position: absolute;
+    background-repeat: repeat;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 30px;
+    z-index: -1;
+}
+.title{
+    margin-bottom: 80px;
+}
+.card-icon{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: #f4f4f4;
+    transition: all 0.4s;
+}
+.card-icon i{
+    color: #1C1C1C;
+    font-size: 30px;
+    transition: all 0.5s;
+    
+}
+.card{
+    padding: 50px 0;
+    box-shadow: 0px 10px 30px -8px rgba(0, 0, 0, 0.1);
+    transition: all 0.5s;
+}
+.card p{
+    font-size: 14px;
+    word-spacing: 2px;
+    line-height: 1.6;
+}
+.card:hover .card-icon{
+    background-color: #1C1C1C;
+    color: white;
+}
+.card:hover i{
+    color: white;
+}
+/* END OF SERVICES SECTION */
+/* START OF PORTFOLIO SECTION */
+#works .nav-tabs .nav-link{
+    color: #222;
+    font-weight: 700;
+    position: relative;
+    border: none;
+    margin-bottom: 50px;
+
+}
+#works .nav-tabs .nav-link.active{
+    border: none;
+}
+#works .nav-tabs .nav-link:hover,#works .nav-tabs .nav-link:hover:focus {
+    border: none;
+}
+#works .nav-tabs .nav-link::before{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    background-color: black;
+    transition: all 0.4s;
+}
+#works .nav-tabs .nav-link.active::before{
+    width: 60%;
+}
+.overlayer{
+    top: 5px;
+    bottom: 5px;
+    left:5px;
+    right: 5px;
+    background-color: rgba(255, 255, 255, 0.95);
+    opacity: 0;
+    transition: all 0.5s;
+    transform: translateY(10px);
+}
+.overlayer h6{
+    font-size: 12px;
+    margin-bottom: 15px;
+    font-weight: 700;
+    letter-spacing: 2;
+   transform: translateY(-15px);
+   transition: all 0.5s;
+}
+.item-icon i{
+    height: 30px;
+    width: 30px;
+    background-color: black;
+    border-radius: 50%;
+    border: solid 1px black;
+    color: #eee;
+    line-height: 2;
+    font-size: 14px;
+    transition: all 0.5s;
+}
+.item-icon{
+    transform:translateY(15px) ;
+    transition: all 0.5s 0.1s;
+}
+.item-img:hover .overlayer{
+ opacity: 1;
+ transform: translateY(0);
+}
+.item-img:hover h6{
+    transform: translateY(0);
+}
+.item-img:hover .item-icon{
+    transform: translateY(0);
+}
+.item-icon i:hover{
+    background-color: white;
+    color: black;
+}
+
+/* END OF PORTFOLIO SECTION */
+/* START OF Testimonials SECTION */
+.feed-img{
+    width: 90px;
+    margin-bottom: 15px;
+}
+.feedback p{
+    font-size: 15px;
+    line-height: 1.6;
+}
+.feedback h6{
+    font-size: 16px;
+    font-weight: 600;
+    margin: 30px 0 5px;
+}
+.feedback span{
+    font-size: 12px;
+    font-weight: 600;
+    color: #888;
+    margin-bottom: 30px;
+}
+.carousel-indicators [data-bs-target] {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #d6d6d6;
+    transition: all 0.4s;
+}
+.carousel-indicators .active {
+    background-color:#869791 ;
+}
+.carousel-indicators [data-bs-target]:hover{
+    background-color:#869791
+}
+
+/* END OF Testimonials SECTION */
+/* START OF EXTRA SECTION */
+.counter i{
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+.counter p{
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+/* END OF EXTRA SECTION */
+/* START OF TEAM SECTION */
+.cover{
+    background-color: rgba(255, 255, 255, 0.95);
+    top: 5px;
+    right: 5px;
+    left: 5px;
+    bottom: 5px;
+    opacity: 0;
+    transition: all 0.5s;
+    transform: rotateY(0) scale(0.5, 0.5);
+}
+.social i{
+    height: 40px;
+    width: 40px;
+    border: 1px solid black;
+    border-radius: 50%;
+    color: white;
+    background-color: black;
+    font-size: 18px;
+    padding-top: 10px;
+    transition: all 0.5s;
+    transform: rotateY(0) scale(0.5, 0.5);
+}
+.social a{
+    margin-right: 5px ;
+}
+.member:hover .cover{
+    transform: rotateY(180deg) scale(1, 1);
+    opacity: 1;
+}
+.member:hover .social a i{
+    transform: rotateY(180deg) scale(1, 1);
+}
+.member:hover .social{
+    flex-direction: row-reverse;
+}
+.member-text{
+    background-color: rgba(52, 52, 52,.8);
+    padding: 25px;
+}
+.member-text h4{
+    font-weight: 500;
+}
+.member-text h5{
+    font-size: 20px;
+}
+.social i:hover{
+    background-color: white;
+    color: black;
+}
+.member-img{
+    overflow: hidden;
+}
+.member-img img{
+    transition: all .5s;
+}
+.member-img:hover img{
+    transform: scale(1.3);
+}
+/* END OF TEAM SECTION */
+/* START OF CONTACT SECTION */
+.item{
+    margin-bottom: 30px;
+   
+}
+.contact-icon{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #f4f4f4;
+    margin-bottom: 15px;
+    font-size: 25px;
+    transition: all 0.5s;
+}
+.item p{
+    font-size: 15px;
+    line-height: 1.6;
+    margin: 0;
+}
+.item h6{
+    margin-bottom: 10px;
+}
+.item:hover .contact-icon{
+    background-color: black;
+    color: white;
+}
+.btn{
+    padding: 10px 40px;
+    border: 1px solid black;
+    margin-top: 15px;
+    color: white;
+    background-color: black;
+    transition: all 0.4s;
+}
+.btn:hover{
+    border: 1px solid black;
+    background-color: white;
+    color: black;
+}
+.form-control{
+    background-color: #F4F4F4;
+    border: none;
+    
+}
+.form-control:focus {
+   border-color: transparent;
+   background-color: #F4F4F4;
+   box-shadow: none;
+}
+/* END OF CONTACT SECTION */
+/* START OF FOOTER */
+footer {
+    background: #1c1c1c;
+    padding: 20px;
+}
+footer p{
+    font-size: 13px;
+    word-spacing: 2px;
+}
+/* END OF FOOTER */
